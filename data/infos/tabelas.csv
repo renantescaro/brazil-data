@@ -1,0 +1,181 @@
+nome tabela,descrição,exemplo de projeto
+br_abrinq_oca,Dados do Observatório da Criança e do Adolescente (Fundação Abrinq),Análise de indicadores de bem-estar infantil por região
+br_ana_atlas_esgotos,Levantamento do Atlas de Esgotos da Agência Nacional de Águas,Estudo de impacto ambiental e infraestrutura sanitária urbana
+br_ana_reservatorios,Dados sobre níveis e volumes de reservatórios monitorados pela ANA,Monitoramento de crises hídricas e gestão de recursos naturais
+br_anatel_banda_larga_fixa,Estatísticas de acessos de banda larga fixa no Brasil via Anatel,Mapeamento de exclusão digital e qualidade de conexão por DDD
+br_anatel_indice_brasileiro_conectividade,Indicador de conectividade dos municípios brasileiros,Ranking de cidades inteligentes e infraestrutura de rede
+br_anp_precos_combustiveis,Série histórica de preços de revenda de combustíveis da ANP,Painel de monitoramento de inflação e variação de preços de bomba
+br_ans_beneficiario,Dados de beneficiários de planos de saúde privados via ANS,Análise demográfica do setor de saúde suplementar
+br_anvisa_medicamentos_industrializados,Registro e comercialização de medicamentos no Brasil (Anvisa),Estudo de mercado farmacêutico e disponibilidade de genéricos
+br_ba_feiradesantana_camara_leis,Legislação e dados da Câmara Municipal de Feira de Santana,Plataforma de transparência e consulta de leis municipais
+br_bcb_estban,Estatística Bancária por Município do Banco Central,Análise de bancarização e depósitos por localidade
+br_bcb_indicadores,Indicadores econômicos variados do Banco Central,Dashboard de conjuntura econômica nacional
+br_bcb_sicor,Sistema de Operações do Crédito Rural e do Proagro,Avaliação de financiamento agrícola e risco de safra
+br_bcb_taxa_cambio,Cotações diárias de taxas de câmbio do Banco Central,Conversor automatizado de moedas para e-commerce
+br_bcb_taxa_selic,Série histórica da taxa de juros básica (Selic),Cálculo de rendimento de investimentos em renda fixa
+br_bd_diretorios_brasil,"Diretórios de tradução de IDs (municípios,  estados,  órgãos) do Brasil",Limpeza e padronização de bases de dados geográficas
+br_bd_diretorios_data_tempo,"Tabelas de referência para datas, feriados e tempo",Enriquecimento de séries temporais com calendário de feriados
+br_bd_diretorios_mundo,Diretórios de países e códigos internacionais,Normalização de dados para análises de comércio exterior
+br_bd_metadados,Informações sobre as próprias tabelas do repositório,Catálogo automatizado de linhagem de dados
+br_bd_vizinhanca,Dados sobre adjacência geográfica de municípios e regiões,Análise de transbordamento econômico entre cidades vizinhas
+br_caixa_sorteios,Resultados históricos das loterias da Caixa Econômica Federal,Estudo probabilístico e estatístico de jogos de azar
+br_camara_dados_abertos,"Dados sobre deputados, proposições e votações da Câmara",Aplicativo de acompanhamento de atividade parlamentar
+br_capes_bolsas,Dados de concessão de bolsas de mestrado e doutorado pela CAPES,Análise do investimento em ciência e tecnologia no Brasil
+br_ce_fortaleza_sefin_iptu,Dados de arrecadação e lançamentos de IPTU em Fortaleza,Planejamento urbano e arrecadação fiscal municipal
+br_cgu_beneficios_cidadao,"Dados do Bolsa Família, Auxílio Brasil e outros benefícios sociais",Auditoria de programas sociais e identificação de fraudes
+br_cgu_cartao_pagamento,Gastos realizados com Cartão Corporativo do Governo Federal,Relatório de transparência sobre gastos da Presidência
+br_cgu_dados_abertos,Metadados e informações gerais de transparência da CGU,Portal de integridade pública e dados abertos
+br_cgu_ebt,Escala Brasil Transparente (avaliação de transparência ativa),Ranking de transparência de estados e municípios
+br_cgu_emendas_parlamentares,Execução financeira de emendas parlamentares federais,Rastreamento de verbas enviadas por deputados para bases eleitorais
+br_cgu_fef,Dados do Fundo de Estabilização Financeira,Análise de fluxos de caixa da união
+br_cgu_licitacao_contrato,Detalhes de licitações e contratos do Governo Federal,Identificação de padrões em compras públicas e fornecedores
+br_cgu_orcamento_publico,Dados de execução orçamentária e financeira da União via CGU,Painel de acompanhamento de gastos públicos por ministério
+br_cgu_pessoal_executivo_federal,Informações agregadas sobre a força de trabalho do Executivo,Análise de evolução da folha de pagamento federal
+br_cgu_receitas_publicas,Dados detalhados sobre a arrecadação de receitas da União,Monitoramento de metas fiscais e fontes de arrecadação
+br_cgu_servidores_executivo_federal,Cadastro detalhado de servidores ativos e aposentados,Estudo sobre diversidade e cargos no serviço público
+br_clp_ranking_competitividade,Ranking de Competitividade dos Estados (Centro de Liderança Pública),Identificação de gargalos socioeconômicos regionais
+br_cnj_estatisticas_poder_judiciario,Indicadores de produtividade e tramitação processual (Justiça em Números),Análise de gargalos e tempo médio de processos judiciais
+br_cnj_improbidade_administrativa,Cadastro Nacional de Condenações por Improbidade Administrativa,Verificação de antecedentes para compliance em órgãos públicos
+br_cnpq_bolsas,Dados de fomento à pesquisa e concessão de bolsas pelo CNPq,Mapeamento de investimentos científicos por área do conhecimento
+br_cvm_administradores_carteira,Dados de gestores e administradores de carteiras registrados na CVM,Diretório de profissionais habilitados para mercado de capitais
+br_cvm_oferta_publica_distribuicao,Informações sobre IPOs e ofertas públicas de valores mobiliários,Análise histórica de captação de recursos via mercado de ações
+br_datahackers_state_data,Resultados da pesquisa State of Data Brazil sobre o mercado de dados,Relatório sobre salários e tecnologias mais usadas em dados
+br_fbsp_absp,Dados do Anuário Brasileiro de Segurança Pública (FBSP),Estudo de taxas de criminalidade e letalidade policial por estado
+br_fgv_igp,Índices Gerais de Preços (IGP-M e IGP-DI) calculados pela FGV,Cálculo de reajustes contratuais e aluguéis imobiliários
+br_firjan_ifgf,Índice FIRJAN de Gestão Fiscal dos municípios,Avaliação da saúde financeira e autonomia das prefeituras
+br_geobr_mapas,Mapas e malhas geográficas simplificadas para visualização (GeoBR),Criação de mapas de calor temáticos com limites municipais
+br_ggb_relatorio_lgbtqi,Dados sobre violência e assassinatos de pessoas LGBTQI+ (Grupo Gay da Bahia),Estatísticas para políticas públicas de proteção a minorias
+br_ibge_amc,Áreas Mínimas Comparáveis para análises temporais de municípios,Estudo de evolução demográfica corrigindo divisões municipais
+br_ibge_cbo_2002,Classificação Brasileira de Ocupações versão 2002,Padronização de cargos para análise de mercado de trabalho
+br_ibge_censo_2022,Dados preliminares e definitivos do Censo Demográfico 2022,Atualização de estimativas populacionais para repasse de verbas
+br_ibge_censo_demografico,Séries históricas e microdados de censos anteriores,Análise de transição demográfica brasileira em longo prazo
+br_ibge_estadic,Pesquisa de Informações Básicas Estaduais (IBGE),Mapeamento de estrutura administrativa dos governos estaduais
+br_ibge_inpc,Índice Nacional de Preços ao Consumidor (famílias até 5 salários),Reajustes salariais e análise de poder de compra
+br_ibge_ipca,Índice Nacional de Preços ao Consumidor Amplo (meta de inflação),Indicador oficial de inflação para correção de valores
+br_ibge_ipca15,Prévia mensal do IPCA com coleta em período reduzido,Antecipação de tendências inflacionárias para o mercado financeiro
+br_ibge_ipp,Índice de Preços ao Produtor das indústrias de transformação,Monitoramento de custos de produção na porta da fábrica
+br_ibge_munic,Pesquisa de Informações Básicas Municipais (perfil das prefeituras),Estudo sobre capacidade de gestão e saneamento municipal
+br_ibge_nomes_brasil,Ranking e frequência de nomes da população por década,Curiosidades estatísticas e tendências culturais de nomes
+br_ibge_pam,Produção Agrícola Municipal (lavouras permanentes e temporárias),Ranking de maiores produtores de grãos e cana por cidade
+br_ibge_pevs,Produção da Extração Vegetal e da Silvicultura,Monitoramento de extração de madeira e produtos florestais
+br_ibge_pib,Produto Interno Bruto dos Municípios e Estados,Análise de concentração de riqueza e crescimento econômico regional
+br_ibge_pnad,Pesquisa Nacional por Amostra de Domicílios (anual),Estudo histórico sobre condições de moradia e migração
+br_ibge_pnad_covid,Versão da PNAD específica para monitoramento da pandemia,Impacto do isolamento social na renda e saúde das famílias
+br_ibge_pnadc,PNAD Contínua (trimestral e mensal),Indicador oficial de desemprego e rendimento médio do trabalho
+br_ibge_pof,Pesquisa de Orçamentos Familiares,Análise de hábitos de consumo e estrutura de gastos das famílias
+br_ibge_populacao,Estimativas e contagens populacionais do IBGE,Cálculo de quotas do Fundo de Participação dos Municípios (FPM)
+br_ibge_ppm,Pesquisa da Pecuária Municipal,Mapeamento dos maiores rebanhos bovinos e produção de leite
+br_ieps_saude,Indicadores de saúde do Instituto de Estudos para Políticas de Saúde,Avaliação de eficiência de gastos em saúde pública municipal
+br_imprensa_nacional_dou,Dados extraídos do Diário Oficial da União,Monitoramento de nomeações e exonerações no governo federal
+br_inep_ana,Avaliação Nacional da Alfabetização,Diagnóstico de níveis de leitura e escrita no ensino fundamental
+br_inep_avaliacao_alfabetizacao,Dados sobre desempenho em alfabetização (SAEB),Estudo sobre defasagem de aprendizado na idade certa
+br_inep_censo_educacao_superior,Dados sobre cursos e alunos de graduação e pós-graduação,Análise de evasão e perfil socioeconômico de universitários
+br_inep_censo_escolar,Matrículas e infraestrutura da educação básica,Dimensionamento de demanda por vagas na rede pública
+br_inep_educacao_especial,Dados sobre inclusão e matrículas de alunos com deficiência,Avaliação de políticas de acessibilidade nas escolas
+br_inep_enem,Microdados do Exame Nacional do Ensino Médio,Correlação entre renda familiar e nota final no exame
+br_inep_formacao_docente,Dados sobre a qualificação dos professores brasileiros,Análise de adequação da formação docente por disciplina
+br_inep_ideb,Índice de Desenvolvimento da Educação Básica,Ranking de qualidade de escolas e redes municipais/estaduais
+br_inep_indicador_nivel_socioeconomico,Nível socioeconômico das escolas (Inse),Controle de contexto social para análise de desempenho escolar
+br_inep_indicadores_educacionais,Taxas de aprovação e distorção idade-série,Identificação de gargalos de fluxo escolar por região
+br_inep_saeb,Sistema de Avaliação da Educação Básica,Acompanhamento da evolução da proficiência em Português e Matemática
+br_inep_sinopse_estatistica_educacao_basica,Dados agregados da educação brasileira,Relatório estatístico anual sobre o sistema de ensino
+br_inmet_bdmep,Banco de Dados Meteorológicos para Ensino e Pesquisa,Análise de correlação entre clima e produtividade agrícola
+br_inpe_prodes,Monitoramento do Desmatamento da Floresta Amazônica por Satélite,Cálculo de taxas oficiais de desmatamento anual na Amazônia
+br_inpe_queimadas,Monitoramento de focos de incêndio e queimadas via satélite,Sistema de alerta precoce para brigadas de incêndio
+br_inpe_sisam,Sistema de Informações Ambientais integradas à Saúde,Estudo do impacto da poluição do ar em doenças respiratórias
+br_ipea_acesso_oportunidades,Dados de acessibilidade urbana a emprego e serviços,Planejamento de linhas de transporte público baseado em demanda
+br_ipea_avs,Avaliação de vulnerabilidade social (Ipea),Mapeamento de áreas prioritárias para assistência social
+br_ipea_salario_minimo,Série histórica de valores reais e nominais do salário mínimo,Cálculo de poder de compra histórico do trabalhador brasileiro
+br_mapbiomas_estatisticas,Dados de cobertura e uso da terra no Brasil,Análise de conversão de florestas em pastagens ou agricultura
+br_mc_indicadores,Indicadores de programas do Ministério da Cidadania,Acompanhamento de metas de redução da pobreza
+br_mdr_snis,Sistema Nacional de Informações sobre Saneamento,Benchmarking de eficiência de empresas de água e esgoto
+br_me_caged,Novo Cadastro Geral de Empregados e Desempregados,Saldo mensal de criação de empregos formais por setor
+br_me_clima_organizacional,Pesquisas de satisfação e clima no serviço público federal,Análise de retenção de talentos na administração pública
+br_me_cno,Cadastro Nacional de Obras de construção civil,Monitoramento do aquecimento do setor imobiliário e construção
+br_me_cnpj,Dados cadastrais de empresas brasileiras (Receita Federal),Mapeamento de densidade empresarial por setor e CNAE
+br_me_comex_stat,Estatísticas de exportação e importação detalhadas,Balança comercial por país de destino e tipo de produto
+br_me_estoque_divida_publica,Dados sobre a dívida pública federal,Análise do perfil de vencimentos e credores da união
+br_me_exportadoras_importadoras,Lista de empresas que operam no comércio exterior,Identificação de players principais por setor de exportação
+br_me_pensionistas,Dados de pensionistas do serviço público federal,Análise de impacto atuarial e demografia previdenciária
+br_me_rais,Relação Anual de Informações Sociais (estoque de empregos),Estudo sobre massa salarial e escolaridade formal por CNAE
+br_me_siape,Sistema Integrado de Administração de Pessoal (Executivo),Monitoramento de cargos e funções comissionadas na União
+br_me_sic,Dados do Sistema de Informações ao Cidadão (pedidos de acesso),Análise de transparência passiva e temas mais demandados
+br_me_siconfi,Sistema de Informações Contábeis e Fiscais do Setor Público,Comparativo de gastos em educação e saúde entre municípios
+br_me_siorg,Sistema de Informações Organizacionais do Governo Federal,Mapeamento da estrutura hierárquica e órgãos da administração
+br_mec_prouni,Dados de bolsas concedidas pelo Programa Universidade para Todos,Estudo sobre inclusão no ensino superior privado por raça
+br_mec_sisu,Dados do Sistema de Seleção Unificada para universidades públicas,Análise de notas de corte por curso e região do Brasil
+br_mg_belohorizonte_smfa_iptu,Dados tributários e imobiliários de Belo Horizonte,Mapeamento de valorização urbana e arrecadação de IPTU
+br_mma_extincao,Lista de espécies da fauna e flora brasileiras sob ameaça,Planejamento de áreas de preservação ambiental prioritárias
+br_mme_consumo_energia_eletrica,Estatísticas de consumo de energia por classe (residencial/industrial),Indicador de atividade econômica e eficiência energética
+br_mobilidados_indicadores,Indicadores de mobilidade urbana sustentável,Avaliação de malha cicloviária e tempos de deslocamento
+br_mp_pep,Painel Estatístico de Pessoal (Ministério do Planejamento),Dashboard de evolução de servidores públicos por ministério
+br_ms_atencao_basica,Dados de cobertura e equipes da Atenção Primária à Saúde,Monitoramento da estratégia de Saúde da Família (ESF)
+br_ms_cnes,Cadastro Nacional de Estabelecimentos de Saúde,Localização de leitos de UTI e equipamentos de diagnóstico
+br_ms_imunizacoes,Dados de doses aplicadas e coberturas vacinais (SIPNI),Identificação de bolsões de baixa vacinação para campanhas
+br_ms_pns,Pesquisa Nacional de Saúde (amostra de domicílios),Estudo sobre prevalência de doenças crônicas como diabetes
+br_ms_populacao,Estimativas populacionais utilizadas pelo Ministério da Saúde,Cálculo de metas de vacinação e repasses por habitante
+br_ms_sia,Sistema de Informações Ambulatoriais (procedimentos),Análise de demanda por consultas e exames especializados
+br_ms_sih,Sistema de Informações Hospitalares (internações e AIH),Estudo sobre causas de hospitalização e custos do SUS
+br_ms_sim,Sistema de Informação sobre Mortalidade,Análise de causas de óbito e taxas de mortalidade infantil
+br_ms_sinan,Sistema de Informação de Agravos de Notificação,Monitoramento de surtos de dengue e doenças infectocontagiosas
+br_ms_sinasc,Sistema de Informações sobre Nascidos Vivos,Perfil de mães e bebês para redução da mortalidade neonatal
+br_ms_sisvan,Sistema de Vigilância Alimentar e Nutricional,Mapeamento de desnutrição e obesidade em crianças e gestantes
+br_ms_vacinacao_covid19,Registros detalhados de vacinação contra a COVID-19,Análise de efetividade vacinal por fabricante e faixa etária
+br_observatorio_crianca_indicadores,Indicadores de desenvolvimento infantil e proteção,Monitoramento de metas do Estatuto da Criança e do Adolescente
+br_ons_energia_armazenada,Níveis de energia armazenada nos reservatórios do SIN,Previsão de bandeiras tarifárias e risco de racionamento
+br_poder360_pesquisas,Agregador de pesquisas eleitorais e de opinião pública,Análise de tendências de aprovação de governos e candidatos
+br_rf_arrecadacao,Dados de arrecadação de tributos federais por região,Monitoramento da carga tributária e arrecadação de impostos
+br_rf_cafir,Cadastro de Imóveis Rurais da Receita Federal,Mapeamento da estrutura fundiária e uso da terra no Brasil
+br_rf_cno,Cadastro Nacional de Obras da Receita Federal,Monitoramento de regularidade fiscal e progresso de obras civis
+br_rj_isp_estatisticas_seguranca,Dados de criminalidade e segurança pública do Rio de Janeiro (ISP),Mapeamento de manchas criminais por batalhão e delegacia
+br_rj_rio_de_janeiro_ipp_ips,Índice de Progresso Social do Rio de Janeiro (IPP),Avaliação de qualidade de vida e infraestrutura por bairro carioca
+br_rj_tce_iegm,Índice de Efetividade da Gestão Municipal do TCE-RJ,Ranking de eficiência na aplicação de recursos públicos no Rio
+br_seeg_emissoes,Sistema de Estimativas de Emissões de Gases de Efeito Estufa,Análise da pegada de carbono por setor econômico brasileiro
+br_senado_cpipandemia,Documentos e dados abertos da CPI da Pandemia no Senado,Relatório de transparência e investigação de atos governamentais
+br_sfb_sicar,Sistema Nacional de Cadastro Ambiental Rural (Serviço Florestal),Monitoramento de áreas de preservação permanente em fazendas
+br_sgp_informacao,Dados do Sistema de Gestão de Parcerias e Convênios,Auditoria de repasses de verbas federais para ONGs e estados
+br_simet_educacao_conectada,Dados de qualidade de internet em escolas brasileiras,Mapeamento de infraestrutura digital para o ensino remoto
+br_sp_alesp,Dados legislativos da Assembleia Legislativa de São Paulo,Acompanhamento de tramitação de projetos de lei estaduais
+br_sp_gov_orcamento,Orçamento e execução financeira do Governo de São Paulo,Dashboard de transparência de gastos do governo paulista
+br_sp_gov_ssp,Estatísticas criminais da Secretaria de Segurança Pública de SP,Análise de taxas de criminalidade mensal por município de SP
+br_sp_saopaulo_dieese_icv,Índice de Custo de Vida na capital paulista (DIEESE),Estudo sobre inflação e cesta básica para a cidade de São Paulo
+br_sp_saopaulo_geosampa_iptu,Dados geoespaciais e de IPTU da capital (GeoSampa),Análise de valorização imobiliária e uso do solo em São Paulo
+br_sp_seduc_fluxo_escolar,Indicadores de aprovação e abandono da rede estadual de SP,Estudo sobre retenção escolar e combate à evasão em São Paulo
+br_sp_seduc_idesp,Índice de Desenvolvimento da Educação do Estado de São Paulo,Ranking de escolas paulistas baseado em metas de aprendizado
+br_sp_seduc_inse,Indicador de Nível Socioeconômico dos alunos da rede paulista,Correlação entre contexto social e desempenho em escolas de SP
+br_stf_corte_aberta,Dados de produtividade e acervo processual do STF,Análise de estoque de processos e decisões dos ministros
+br_tpe_classificacao_saeb,Classificação de proficiência do Todos Pela Educação (SAEB),Painel de metas educacionais nacionais por nível de ensino
+br_trase_supply_chain,Dados de risco de desmatamento em cadeias de suprimentos (Trase),Mapeamento de pegada ambiental de exportações de soja e carne
+br_tse_eleicoes,Resultados eleitorais e perfil de candidatos (Tribunal Superior Eleitoral),Análise de votação por zona eleitoral e bens de candidatos
+br_tse_filiacao_partidaria,Dados de filiados a partidos políticos brasileiros,Estudo sobre representatividade e base de apoio partidária
+dataset_new_arch,Tabelas de migração de arquitetura interna de dados,Documentação técnica de engenharia de dados
+eu_fra_lgbt,Pesquisa da Agência dos Direitos Fundamentais da UE sobre pessoas LGBT,Comparativo internacional de direitos civis na Europa
+logs,Registros de metadados e processamento do sistema,Monitoramento de integridade e erros de ETL
+mundo_bm_learning_poverty,Indicadores de Pobreza de Aprendizagem do Banco Mundial,Análise global de crianças que não conseguem ler aos 10 anos
+mundo_kaggle_olimpiadas,Conjunto de dados históricos das Olimpíadas (via Kaggle),Estudo de evolução de recordes mundiais e medalhas por país
+mundo_onu_adh,Dados de Desenvolvimento Humano (IDH) das Nações Unidas,Ranking global de qualidade de vida e longevidade
+mundo_transfermarkt_competicoes,Valores de mercado e transferências de jogadores (Transfermarkt),Análise financeira de ligas nacionais de futebol
+mundo_transfermarkt_competicoes_internacionais,Estatísticas de competições de clubes internacionais,Comparativo de desempenho entre Libertadores e Champions League
+mundo_transrespect_transphobia,Monitoramento de violência contra pessoas trans no mundo,Relatório global sobre direitos humanos e segurança
+new_arch_pipeline,Configurações de fluxo de dados da nova arquitetura,Mapeamento de linhagem e transformações de dados (Lineage)
+nl_ug_pwt,Penn World Table (PWT) - Dados de produtividade e renda (NL/UG),Estudo de crescimento econômico e paridade de poder de compra
+test_dataset,Conjunto de dados para testes de funcionalidade e carga,Ambiente de sandbox para novos analistas de dados
+us_harvard_ned,Dados de doações e fomento à democracia (Harvard/NED),Mapeamento de financiamento internacional para ONGs
+world_ampas_oscar,Dados históricos de indicados e vencedores do Oscar,Análise de diversidade e tendências na indústria do cinema
+world_fao_production,Estatísticas de produção agrícola e alimentar global (FAO),Monitoramento de segurança alimentar e safras mundiais
+world_fifa_women_world_cup,Estatísticas detalhadas da Copa do Mundo Feminina da FIFA,Estudo de crescimento e engajamento no futebol feminino
+world_fifa_worldcup,Dados históricos de partidas e jogadores da Copa do Mundo Masculina,Análise estatística de desempenho de seleções nacionais
+world_gsps_consortium_gsps,Pesquisa Global sobre Tabagismo em Jovens (GSPS),Acompanhamento de tendências de consumo de tabaco mundial
+world_iea_pirls,Progresso no Estudo Internacional de Alfabetização (PIRLS),Comparativo de competência em leitura entre estudantes do 4º ano
+world_iea_timss,Estudo Internacional de Tendências em Matemática e Ciências (TIMSS),Ranking global de proficiência em exatas na educação básica
+world_imdb_movies,"Dados de filmes, avaliações e elenco do site IMDb",Sistema de recomendação de filmes baseado em gêneros e notas
+world_oecd_pisa,Programa Internacional de Avaliação de Estudantes (PISA),Benchmarking de sistemas educacionais globais
+world_oecd_public_finance,Dados de finanças públicas de países membros da OCDE,Comparativo de carga tributária e gastos governamentais
+world_olympedia_olympics,Dados abrangentes do projeto Olympedia sobre Jogos Olímpicos,Enciclopédia interativa de atletas e resultados olímpicos
+world_slave_voyages_consortium_slave_trade,Banco de dados sobre o tráfico transatlântico de escravizados,Pesquisa histórica e quantitativa sobre a escravidão global
+world_sofascore_competicoes_futebol,Resultados e métricas de desempenho ao vivo (SofaScore),Plataforma de análise preditiva e estatística de futebol
+world_spi_spi,Índice de Progresso Social (Social Progress Imperative),Análise de indicadores não econômicos de bem-estar social
+world_ti_corruption_perception,Índice de Percepção da Corrupção (Transparência Internacional),Mapeamento de risco de integridade para investimentos globais
+world_wb_mides,Dados do Municipal Infrastructure Data and Estimations (Banco Mundial),Avaliação de lacunas de infraestrutura básica municipal
+world_wb_wwbi,World Wide Bureaucracy Indicators (Banco Mundial),Estudo sobre eficiência e tamanho da burocracia governamental
+world_wwf_hydrosheds,Mapeamento global de bacias hidrográficas e drenagem (WWF),Análise hidrológica e conservação de rios em escala mundial

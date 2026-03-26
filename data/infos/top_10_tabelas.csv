@@ -1,0 +1,11 @@
+nome tabela,descrição,exemplo de projeto,volume (bilhões de linhas),tamanho (TB)
+br_ms_sia.producao_ambulatorial,Registros de todos os atendimentos ambulatoriais do SUS,Análise de carga de doenças e demanda por especialidades médicas,6.54,2.23
+br_me_cnpj.estabelecimentos,Dados detalhados de cada unidade física de empresas no Brasil,Mapeamento de polos industriais e expansão de franquias,2.95,0.66
+br_me_cnpj.empresas,Informações cadastrais principais das empresas brasileiras,Estudo sobre mortalidade de empresas e concentração de mercado,2.80,0.25
+br_ms_sih.servicos_profissionais,Dados sobre profissionais envolvidos em internações hospitalares,Análise de custos de honorários e eficiência hospitalar,2.51,0.80
+br_ans_beneficiario.informacao_consolidada,Dados consolidados de beneficiários de planos de saúde privados,Predição de tendências no mercado de saúde suplementar,2.30,0.68
+br_me_rais.microdados_vinculos,Microdados detalhados de vínculos empregatícios formais,Estudo longitudinal de trajetórias salariais e carreiras,2.07,0.44
+br_cgu_beneficios_cidadao.bolsa_familia_pagamento,Histórico de pagamentos mensais do Bolsa Família,Avaliação de impacto socioeconômico de programas de transferência,1.49,0.16
+br_me_cnpj.socios,Quadro de Sócios e Administradores (QSA) das empresas,Análise de grupos econômicos e redes de influência societária,1.20,0.11
+br_rf_cno.areas,Dados de áreas e metragens de obras registradas,Monitoramento do crescimento físico urbano e setor construtivo,1.08,0.09
+br_rf_cno.cnaes,Classificação de atividades econômicas por obra,Estudo de especialização produtiva da construção civil,0.90,0.03
