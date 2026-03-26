@@ -1,12 +1,10 @@
-1. Criar o Container Docker
-   Roda o servidor com senha definida e limites de arquivos otimizados.
+1. Criar o Container Docker, roda o servidor com senha definida e limites de arquivos.
 
 ```cmd
 docker run -d --name clickhouse-server -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 -e CLICKHOUSE_PASSWORD=sua_senha clickhouse/clickhouse-server
 ```
 
-2. Configurar Tabelas
-   Acesse o terminal do ClickHouse:
+2. Configurar Tabelas, acesse o terminal do ClickHouse:
 
 ```cmd
 docker exec -it clickhouse-server clickhouse-client --password sua_senha
@@ -36,11 +34,9 @@ CREATE TABLE cbo_nomes (
 ) ENGINE = TinyLog();
 ```
 
-3. Preparar e Importar Dados
-   Saia do ClickHouse (exit) e execute no terminal do Windows:
+3. Preparar e Importar Dados, saia do ClickHouse (exit) e execute no terminal do Windows:
 
-A. Mover arquivos para a pasta segura do ClickHouse
-Isso evita erros de DATABASE_ACCESS_DENIED.
+A. Mover arquivos para a pasta segura do ClickHouse, isso evita erros de DATABASE_ACCESS_DENIED.
 
 ```cmd
 docker exec -it clickhouse-server mkdir -p /var/lib/clickhouse/user_files
