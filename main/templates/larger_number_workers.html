@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profissões por número de funcionários</title>
+        <style>
+            :root {
+                --primary: #2b6cb0;
+                --success: #2f855a;
+                --text-main: #1a1a1a;
+                --text-muted: #718096;
+                --bg: #f8f9fa;
+            }
+
+            .btn-voltar {
+                text-decoration: none;
+                color: var(--text-muted);
+                font-size: 0.9rem;
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                margin: 0 0 5px 0;
+            }
+
+            body {
+                font-family: system-ui, -apple-system, sans-serif;
+                margin: 0;
+                padding: 15px;
+                background-color: var(--bg);
+                color: var(--text-main);
+            }
+
+            .card {
+                max-width: 800px;
+                margin: auto;
+                background: white;
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                display: flex;
+                flex-direction: column;
+                padding: 15px 0;
+                border-bottom: 1px solid #edf2f7;
+            }
+
+            tr:last-child {
+                border-bottom: none;
+            }
+
+            td {
+                padding: 2px 0;
+            }
+
+            .cargo-nome {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--text-main);
+                margin-bottom: 4px;
+            }
+
+            .vagas {
+                background: #ebf8ff;
+                color: var(--primary);
+                padding: 2px 8px;
+                border-radius: 4px;
+                font-size: 0.75rem;
+                font-weight: bold;
+                display: inline-block;
+                margin-bottom: 8px;
+            }
+
+            .media-container {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .label-media {
+                font-size: 0.8rem;
+                color: var(--text-muted);
+            }
+
+            .media-valor {
+                font-weight: 800;
+                color: var(--success);
+                font-size: 1.1rem;
+                white-space: nowrap;
+            }
+
+            @media (min-width: 600px) {
+                thead {
+                    display: table-header-group;
+                }
+
+                thead th {
+                    text-align: left;
+                    padding: 12px;
+                    background: #f1f5f9;
+                    color: var(--text-muted);
+                    font-size: 0.75rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                }
+
+                tr {
+                    display: table-row;
+                }
+
+                td {
+                    display: table-cell;
+                    padding: 12px;
+                    vertical-align: middle;
+                }
+
+                .cargo-nome {
+                    font-size: 0.95rem;
+                    font-weight: 500;
+                }
+
+                .label-media {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <a href="/" class="btn-voltar">← Voltar</a>
+            <h1>Profissões por número de funcionários</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Estado</th>
+                        <th>Cargo/Profissão</th>
+                        <th>Trabalhadores</th>
+                        <th>Média Salarial</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in date %}
+                    <tr>
+                        <td class="cargo-nome">{{ item.sigla_uf }}</td>
+                        <td class="cargo-nome">{{ item.cargo }}</td>
+                        <td>
+                            <span class="vagas">{{ "{:,.3f}".format(item.total_funcionarios) }} trabalhadores</span>
+                        </td>
+                        <td>
+                            <div class="media-container">
+                                <span class="label-media">Média:</span>
+                                <span class="media-valor">R$ {{ "{:,.2f}".format(item.media_salarial) }}</span>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mapa Salarial do Brasil</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <style>
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                margin: 0;
+                padding: 20px;
+                background: #f8f9fa;
+            }
+
+            #map {
+                height: 600px;
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            }
+
+            .info-box {
+                background: white;
+                padding: 15px;
+                border-radius: 8px;
+                margin-bottom: 20px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            }
+
+            .leaflet-interactive {
+                stroke: #fff;
+                stroke-width: 1;
+                fill-opacity: 0.7;
+            }
+
+            .legend {
+                background: white;
+                padding: 10px;
+                line-height: 18px;
+                color: #555;
+                border-radius: 5px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .btn-voltar {
+                text-decoration: none;
+                color: #007bff;
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+
+            .legend {
+                background: white;
+                padding: 10px;
+                line-height: 20px;
+                color: #333;
+                border-radius: 5px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+                font-size: 12px;
+            }
+
+            .legend i {
+                width: 18px;
+                height: 18px;
+                float: left;
+                margin-right: 8px;
+                opacity: 0.8;
+                border: 1px solid #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="max-width: 1000px; margin: auto;">
+            <a href="/" class="btn-voltar">← Voltar para Busca</a>
+            <div class="info-header">
+                <h1>Maiores Salários por Estado</h1>
+            </div>
+
+            <div id="map"></div>
+        </div>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script>
+            const dadosSalariais = {{ data_map| tojson }};
+            const map = L.map('map').setView([-15.78, -47.93], 4);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+            fetch('https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/brazil-states.geojson')
+                .then(res => res.json())
+                .then(geojson => {
+                    L.geoJson(geojson, {
+                        style: function (feature) {
+                            const uf = feature.properties.sigla;
+                            const info = dadosSalariais[uf];
+
+                            const valor = info ? parseFloat(info.media) : 0;
+
+                            let cor;
+                            if (valor === 0) cor = '#ced4da';
+                            else if (valor < 1500) cor = '#d73027'; // Crítico
+                            else if (valor < 1800) cor = '#f46d43';
+                            else if (valor < 2100) cor = '#fdae61';
+                            else if (valor < 2400) cor = '#fee08b';
+                            else if (valor < 2700) cor = '#ffffbf'; // Regular
+                            else if (valor < 3000) cor = '#d9ef8b';
+                            else if (valor < 3500) cor = '#a6d96a';
+                            else if (valor < 4000) cor = '#66bd63';
+                            else if (valor < 5000) cor = '#1a9850';
+                            else cor = '#006837'; // Excelente
+
+                            return {
+                                fillColor: cor,
+                                weight: 2,
+                                opacity: 1,
+                                color: 'white',
+                                fillOpacity: 0.8
+                            };
+                        },
+                        onEachFeature: function (feature, layer) {
+                            const uf = feature.properties.sigla;
+                            const info = dadosSalariais[uf];
+
+                            let popupContent = `<b>Estado: ${feature.properties.name} (${uf})</b>`;
+                            if (info) {
+                                const mediaNum = parseFloat(info.media);
+                                popupContent += `
+                                    <br>Média Salarial: <b>R$ ${mediaNum.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</b>
+                                    <br>Trabalhadores: ${parseInt(info.vagas).toLocaleString('pt-BR')}
+                                `;
+                            } else {
+                                popupContent += `<br>Sem dados disponíveis`;
+                            }
+
+                            layer.bindTooltip(popupContent, { sticky: true });
+                        }
+                    }).addTo(map);
+                });
+
+            function getColor(d) {
+                return d > 5000 ? '#006837' :
+                    d > 4000 ? '#1a9850' :
+                    d > 3500 ? '#66bd63' :
+                    d > 3000 ? '#a6d96a' :
+                    d > 2700 ? '#d9ef8b' :
+                    d > 2400 ? '#ffffbf' :
+                    d > 2100 ? '#fee08b' :
+                    d > 1800 ? '#fdae61' :
+                    d > 1500 ? '#f46d43' :
+                    '#d73027';
+            }
+
+            const legend = L.control({ position: 'bottomright' });
+
+            legend.onAdd = function (map) {
+                const div = L.DomUtil.create('div', 'info legend');
+                const grades = [0, 1500, 1800, 2100, 2400, 2700, 3000, 3500, 4000, 5000];
+                const labels = ['<strong>Média Salarial</strong><br>'];
+
+                for (let i = 0; i < grades.length; i++) {
+                    div.innerHTML +=
+                        labels.push(
+                            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+                            'R$ ' + grades[i] + (grades[i + 1] ? ' &ndash; ' + grades[i + 1] : '+')
+                        );
+                }
+
+                div.innerHTML = labels.join('<br>');
+                return div;
+            };
+
+            legend.addTo(map);
+        </script>
+    </body>
+</html>

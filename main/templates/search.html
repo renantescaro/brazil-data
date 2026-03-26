@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Busca Salarial</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding: 40px;
+                background-color: #f8f9fa;
+                color: #333;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container {
+                background: white;
+                padding: 30px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 400px;
+            }
+
+            h2 {
+                margin-top: 0;
+                color: #1a1a1a;
+            }
+
+            .autocomplete-container {
+                position: relative;
+                width: 100%;
+            }
+
+            input[type="text"] {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box;
+                font-size: 16px;
+            }
+
+            .autocomplete-results {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #fff;
+                border: 1px solid #ddd;
+                border-top: none;
+                border-radius: 0 0 4px 4px;
+                max-height: 250px;
+                overflow-y: auto;
+                z-index: 1000;
+                display: none;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .autocomplete-item {
+                padding: 12px;
+                cursor: pointer;
+                border-bottom: 1px solid #f1f1f1;
+            }
+
+            .autocomplete-item:last-child {
+                border-bottom: none;
+            }
+
+            .autocomplete-item:hover {
+                background-color: #f8f9fa;
+                color: #007bff;
+            }
+
+            button {
+                width: 100%;
+                padding: 12px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-top: 15px;
+                font-size: 16px;
+                font-weight: bold;
+                transition: background 0.2s;
+            }
+
+            button:disabled {
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+
+            button:hover:not(:disabled) {
+                background-color: #0056b3;
+            }
+
+            .links-container {
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .links-container a {
+                color: #007bff;
+                text-decoration: none;
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+
+            .links-container a:hover {
+                text-decoration: underline;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: 500;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Busca Salarial</h2>
+
+            <form action="/buscar" method="post" id="buscaForm">
+                <label for="cbo_nome_input">Nome da Profissão:</label>
+                <div class="autocomplete-container">
+                    <input type="text" id="cbo_nome_input" name="cbo_nome" placeholder="Ex: Analista de Sistemas" autocomplete="off">
+                    <div id="autocomplete-results" class="autocomplete-results"></div>
+                </div>
+                <input type="hidden" id="cbo_codigo_hidden" name="cbo_codigo">
+
+                <button type="submit" id="btnConsultar" disabled>Consultar</button>
+            </form>
+
+            <br>
+            <div class="links-container">
+                <a href="/profissoes-topo">
+                    📊 Profissões com maiores salários
+                </a>
+                <br><br>
+                <a href="/quantidade-profissionais">
+                    📊 Profissões por número de funcionários
+                </a>
+                <br><br>
+                <a href="/mapa-salarial">🗺️ Mapa Salarial Brasil</a>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const inputNome = document.getElementById('cbo_nome_input');
+                const resultsContainer = document.getElementById('autocomplete-results');
+                const hiddenCodigo = document.getElementById('cbo_codigo_hidden');
+                const btnConsultar = document.getElementById('btnConsultar');
+                let listaCargos = [];
+
+                fetch('/api/cargos')
+                    .then(response => response.json())
+                    .then(data => {
+                        listaCargos = data;
+                    })
+                    .catch(error => console.error('Erro ao carregar cargos:', error));
+
+                inputNome.addEventListener('input', function () {
+                    const termo = this.value.toLowerCase().trim();
+                    resultsContainer.innerHTML = '';
+                    btnConsultar.disabled = true;
+                    hiddenCodigo.value = '';
+
+                    if (termo.length < 2) {
+                        resultsContainer.style.display = 'none';
+                        return;
+                    }
+
+                    const filtrados = listaCargos.filter(cargo =>
+                        cargo.nome.toLowerCase().includes(termo)
+                    ).slice(0, 10);
+
+                    if (filtrados.length > 0) {
+                        filtrados.forEach(cargo => {
+                            const item = document.createElement('div');
+                            item.classList.add('autocomplete-item');
+                            item.textContent = cargo.nome;
+
+                            item.addEventListener('click', function () {
+                                inputNome.value = cargo.nome;
+                                hiddenCodigo.value = cargo.codigo;
+                                resultsContainer.style.display = 'none';
+                                btnConsultar.disabled = false;
+                            });
+                            resultsContainer.appendChild(item);
+                        });
+                        resultsContainer.style.display = 'block';
+                    } else {
+                        resultsContainer.style.display = 'none';
+                    }
+                });
+
+                document.addEventListener('click', function (event) {
+                    if (!event.target.matches('#cbo_nome_input')) {
+                        resultsContainer.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
