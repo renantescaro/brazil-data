@@ -183,10 +183,19 @@
                         <td class="cargo-nome">{{ item.cargo }}</td>
                         <td><span class="vagas">{{ item.vagas }} Pessoas</span></td>
                         <td class="media-container">
-                            <span class="media">R$ {{ "{:,.2f}".format(item.media) }}</span>
-                            <div class="teto-label">Teto: <span class="teto-valor">R$ {{ "{:,.2f}".format(item.teto) }}</span></div>
+                            <span class="media">
+                                R$ {{ "{:,.2f}".format(item.media)|replace(',', 'v')|replace('.', ',')|replace('v', '.') }}
+                            </span>
+                            <div class="teto-label">
+                                Teto:
+                                <span class="teto-valor">
+                                    R$ {{ "{:,.2f}".format(item.teto)|replace(',', 'v')|replace('.', ',')|replace('v', '.') }}
+                                </span>
+                            </div>
                         </td>
-                        <td class="teto-valor-desktop">R$ {{ "{:,.2f}".format(item.teto) }}</td>
+                        <td class="teto-valor-desktop">
+                            R$ {{ "{:,.2f}".format(item.teto)|replace(',', 'v')|replace('.', ',')|replace('v', '.') }}
+                        </td>
                     </tr>
                     {% endfor %}
                 </tbody>

@@ -20,5 +20,5 @@ MAP_TAMANHO = {
     "7": "100 a 249 funcionários",
     "8": "250 a 499 funcionários",
     "9": "500 a 999 funcionários",
-    "10": "Mais de 1000",
+    "10": "Mais de 1000 funcionários",
 }

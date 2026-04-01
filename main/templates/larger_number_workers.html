@@ -149,7 +149,7 @@
                     <tr>
                         <th>Estado</th>
                         <th>Cargo/Profissão</th>
-                        <th>Trabalhadores</th>
+                        <th>Soma no período (2020-2024)</th>
                         <th>Média Salarial</th>
                     </tr>
                 </thead>
@@ -159,12 +159,16 @@
                         <td class="cargo-nome">{{ item.sigla_uf }}</td>
                         <td class="cargo-nome">{{ item.cargo }}</td>
                         <td>
-                            <span class="vagas">{{ "{:,.3f}".format(item.total_funcionarios) }} trabalhadores</span>
+                            <span class="vagas">
+                                {{ "{:,.0f}".format(item.total_funcionarios)|replace(',', '.') }} trabalhadores
+                            </span>
                         </td>
                         <td>
                             <div class="media-container">
                                 <span class="label-media">Média:</span>
-                                <span class="media-valor">R$ {{ "{:,.2f}".format(item.media_salarial) }}</span>
+                                <span class="media-valor">
+                                    R$ {{ "{:,.2f}".format(item.media_salarial)|replace(',', 'v')|replace('.', ',')|replace('v', '.') }}
+                                </span>
                             </div>
                         </td>
                     </tr>

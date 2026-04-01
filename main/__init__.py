@@ -45,8 +45,9 @@ def search_request():
             COUNT(*) as total
         FROM rais_vinculos 
         WHERE cbo_2002 = '{cbo}'
+        AND valor_remuneracao_media > 400 
         GROUP BY sexo, sigla_uf, instrucao, tamanho
-        ORDER BY media DESC
+        ORDER BY total DESC
         LIMIT 50
     """
 
