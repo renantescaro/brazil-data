@@ -18,3 +18,9 @@ WHERE ano > 2020
 AND sigla_uf = 'AL'
 AND valor_remuneracao_media > 0;
 ```
+
+```sql
+SELECT *
+FROM `basedosdados.br_cgu_beneficios_cidadao.bolsa_familia_pagamento`
+WHERE ano_referencia = 2015;
+```

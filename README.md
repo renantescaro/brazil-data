@@ -32,6 +32,23 @@ CREATE TABLE cbo_nomes (
     cbo_2002 String,
     descricao String
 ) ENGINE = TinyLog();
+
+CREATE TABLE bolsa_familia (
+    ano_competencia UInt16,
+    mes_competencia UInt8,
+    ano_referencia UInt16,
+    mes_referencia UInt8,
+    id_municipio UInt32,
+    sigla_uf LowCardinality(String),
+    cpf_favorecido String,
+    nis_favorecido String,
+    nome_favorecido String,
+    valor_parcela Float32
+)
+ENGINE = MergeTree
+PARTITION BY ano_competencia
+ORDER BY (sigla_uf, id_municipio, nis_favorecido)
+SETTINGS index_granularity = 8192;
 ```
 
 3. Preparar e Importar Dados, saia do ClickHouse (exit) e execute no terminal do Windows:
